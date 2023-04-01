@@ -10,9 +10,11 @@ public class App {
             // String url = "https://raw.githubusercontent.com/alura-cursos/imersao-java-2-api/main/TopMovies.json"; //url da API
         // ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMdb();
        
-        String url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=2023-01-10&end_date=2023-01-17";
-        ExtratorDeConteudo extrator = new ExtratorDeConteudoDaNasa();
+        // String url = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&start_date=2023-01-10&end_date=2023-01-17";
+        // ExtratorDeConteudo extrator = new ExtratorDeConteudoDaNasa();
 
+        String url = "http://localhost:8080/linguagens";
+        ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMdb();
 
        var http = new ClienteHttp();
        String json = http.buscaDados(url);
